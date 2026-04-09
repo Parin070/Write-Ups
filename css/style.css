@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+    --bg-color: #0c0c0c;
+    --text-color: #00ff00;
+    --text-dark: #008800;
+    --highlight: #00ff00;
+    --alert: #ffaa00;
+    --danger: #ff0033;
+    --font-main: 'Share Tech Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+.terminal-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.user { color: var(--highlight); font-weight: bold; }
+.path { color: #00aaff; }
+.command { color: #aaaaaa; }
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: var(--highlight);
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+header {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed var(--text-dark);
+    padding-bottom: 15px;
+}
+
+nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: all 0.2s;
+    text-shadow: 0 0 2px transparent;
+}
+
+nav a:hover, nav a.active {
+    color: var(--text-color);
+    text-shadow: 0 0 5px var(--text-color);
+}
+
+main {
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--text-dark);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p, li, div {
+    text-shadow: 0 0 2px rgba(0, 255, 0, 0.3);
+}
+
+.home-section p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.skills-list li::before {
+    content: "> ";
+    color: var(--text-dark);
+}
+
+/* Writeup Card Styles */
+.writeup-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.writeup-card {
+    border: 1px solid var(--text-dark);
+    padding: 1rem;
+    background-color: rgba(0, 255, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.writeup-card:hover {
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2);
+    border-color: var(--text-color);
+}
+
+.writeup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.writeup-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.writeup-title::before {
+    content: "[+] ";
+    color: var(--text-dark);
+}
+
+.writeup-content.open .writeup-title::before {
+    content: "[-] ";
+}
+
+.writeup-badges {
+    display: flex;
+    gap: 10px;
+}
+
+.badge {
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    border: 1px solid;
+    border-radius: 3px;
+    text-shadow: none;
+}
+
+.badge.easy { color: #00ff00; border-color: #00ff00; }
+.badge.medium { color: var(--alert); border-color: var(--alert); }
+.badge.hard { color: var(--danger); border-color: var(--danger); }
+.badge.insane { color: #aa00ff; border-color: #aa00ff; }
+.badge.category { color: #00aaff; border-color: #00aaff; }
+
+.writeup-content {
+    display: none;
+    margin-top: 1.5rem;
+    border-top: 1px dashed var(--text-dark);
+    padding-top: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.writeup-content.open {
+    display: block;
+}
+
+.section-title {
+    color: #00aaff;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+pre {
+    background-color: #000;
+    border: 1px solid var(--text-dark);
+    padding: 1rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    color: #aaaaaa;
+}
+
+code {
+    font-family: var(--font-main);
+}
+
+.flag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #111;
+    border: 1px dashed var(--danger);
+    color: var(--danger);
+    font-weight: bold;
+    word-break: break-all;
+    box-shadow: 0 0 5px rgba(255, 0, 51, 0.3);
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .writeup-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .writeup-badges {
+        margin-top: 5px;
+    }
+}
+
+/* Markdown Body Styles */
+.markdown-body {
+    border: 1px solid var(--text-dark);
+    padding: 2rem;
+    background-color: rgba(0, 255, 0, 0.02);
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+    color: var(--highlight);
+    border-bottom: 1px dashed var(--text-dark);
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    display: block;
+}
+.markdown-body blockquote {
+    border-left: 2px solid var(--text-dark);
+    padding-left: 1rem;
+    color: #aaaaaa;
+    margin: 1rem 0;
+    font-style: italic;
+}
+.markdown-body img {
+    max-width: 100%;
+    border: 1px solid var(--text-dark);
+    margin: 1rem 0;
+    filter: brightness(0.9) contrast(1.1);
+}
+.markdown-body p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+.markdown-body ul, .markdown-body ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.markdown-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+.markdown-body th, .markdown-body td {
+    border: 1px solid var(--text-dark);
+    padding: 0.75rem;
+    text-align: left;
+}
+.markdown-body th {
+    background-color: rgba(0, 255, 0, 0.1);
+    color: var(--highlight);
+    text-transform: uppercase;
+}
+.markdown-body tr:nth-child(even) {
+    background-color: rgba(0, 255, 0, 0.02);
+}
+.terminal-btn {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-dark);
+    padding: 0.5rem 1rem;
+    font-family: var(--font-main);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+.terminal-btn:hover {
+    background: rgba(0, 255, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}

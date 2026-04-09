@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Writeups</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Preload fonts to avoid layout shift -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="crt-overlay"></div>
+    <div class="terminal-container">
+        <header>
+            <div class="prompt-line">
+                <span class="user">guest@root</span>:<span class="path">~/writeups</span>$ <span class="command"
+                    id="typewriter">./start_session.sh</span>
+            </div>
+        </header>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="#" data-target="home" class="active">[ Home ]</a></li>
+                <li><a href="#" data-target="htb">[ HTB ]</a></li>
+                <li><a href="#" data-target="tryhackme">[ TryHackMe ]</a></li>
+                <li><a href="#" data-target="overthewire">[ OverTheWire ]</a></li>
+                <li><a href="#" data-target="picoctf">[ PicoCTF ]</a></li>
+                <li><a href="#" data-target="sbt">[ Security Blue Team ]</a></li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <!-- Dynamic Content Injected Here by app.js -->
+        </main>
+
+        <main id="writeup-container" style="display: none;">
+            <div id="writeup-controls" style="margin-bottom: 20px;">
+                <button id="back-btn" class="terminal-btn">[<] Back to Directory</button>
+            </div>
+            <div id="writeup-content" class="markdown-body">
+                <!-- Fetched Markdown renders here -->
+            </div>
+        </main>
+
+        <footer>
+            <div class="prompt-line">
+                <span class="user">guest@root</span>:<span class="path" id="current-path">~/writeups</span>$ <span
+                    class="cursor">_</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
