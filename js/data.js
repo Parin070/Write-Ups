@@ -4,6 +4,12 @@ const siteData = {
         bio: "Cybersecurity enthusiast, Blue Teamer, and CTF player. Welcome to my digital notebook. These are my notes and writeups from various platforms.",
         skills: ["Log Analysis", "Reverse Engineering", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
+    latestWriteup: {
+        name: "Introduction To Dark Web Operations",
+        category: "Dark Web",
+        platform: "Security Blue Team",
+        linkTarget: "sbt"
+    },
     writeups: {
         htb: [],
         tryhackme: [],

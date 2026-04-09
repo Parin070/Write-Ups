@@ -46,8 +46,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderHome() {
         closeWriteup();
+        
+        let latestHtml = '';
+        if (siteData.latestWriteup) {
+            latestHtml = `
+                <div class="writeup-card" style="margin-bottom: 2rem; border-color: var(--highlight); background-color: rgba(0, 255, 0, 0.05); cursor: pointer;" onclick="document.querySelector('[data-target=\\'${siteData.latestWriteup.linkTarget}\\']').click()">
+                    <p style="color: #00aaff; margin-bottom: 0.5rem; font-weight: bold;">[ SYSTEM ALERT: NEW INTELLIGENCE UPLOADED ]</p>
+                    <span class="writeup-title">${siteData.latestWriteup.name}</span>
+                    <div class="writeup-badges" style="margin-top: 10px;">
+                        <span class="badge category">${siteData.latestWriteup.category}</span>
+                        <span class="badge" style="border-color: #00aaff; color: #00aaff;">Platform: ${siteData.latestWriteup.platform}</span>
+                    </div>
+                </div>
+            `;
+        }
+
         contentDiv.innerHTML = `
             <div class="home-section">
+                ${latestHtml}
                 <h2>[ ${siteData.profile.name} ]</h2>
                 <p>> ${siteData.profile.bio}</p>
                 <h3 style="margin-top: 2rem;">[ Core Competencies ]</h3>
