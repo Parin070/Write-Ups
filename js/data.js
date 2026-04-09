@@ -2,7 +2,7 @@ const siteData = {
     profile: {
         name: "Parin Arora",
         bio: "Cybersecurity enthusiast, Blue Teamer, and CTF player. Welcome to my digital notebook. These are my notes and writeups from various platforms.",
-        skills: ["Log Analysis", "Reverse Engineering", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
+        skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
         name: "Introduction To Dark Web Operations",
@@ -15,6 +15,7 @@ const siteData = {
         tryhackme: [],
         overthewire: [],
         picoctf: [],
+        homelab: [],
         sbt: [
             {
                 id: "sbt-intro-osint",
