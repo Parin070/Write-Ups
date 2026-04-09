@@ -5,17 +5,25 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Introduction To Dark Web Operations",
-        category: "Dark Web",
-        platform: "Security Blue Team",
-        linkTarget: "sbt"
+        name: "Cowrie Honeypot Lab",
+        category: "Network Defense",
+        platform: "Homelab",
+        linkTarget: "homelab"
     },
     writeups: {
         htb: [],
         tryhackme: [],
         overthewire: [],
         picoctf: [],
-        homelab: [],
+        homelab: [
+            {
+                id: "homelab-cowrie",
+                name: "Cowrie Honeypot Lab",
+                difficulty: "Medium",
+                category: "Network Defense",
+                markdownFile: "content/homelab-cowrie.md"
+            }
+        ],
         sbt: [
             {
                 id: "sbt-intro-osint",
