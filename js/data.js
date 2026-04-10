@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Cowrie Honeypot Lab",
+        name: "DDoS Simulation",
         category: "Network Defense",
         platform: "Homelab",
         linkTarget: "homelab"
@@ -22,6 +22,13 @@ const siteData = {
                 difficulty: "Medium",
                 category: "Network Defense",
                 markdownFile: "content/homelab-cowrie.md"
+            },
+            {
+                id: "homelab-ddos",
+                name: "DDoS Simulation",
+                difficulty: "Easy",
+                category: "Network Defense",
+                markdownFile: "content/homelab-ddos.md"
             }
         ],
         sbt: [
