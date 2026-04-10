@@ -16,13 +16,21 @@
 <body>
     <div class="crt-overlay"></div>
     <div class="terminal-container">
+        <!-- Matrix Rain Canvas -->
+        <canvas id="matrix-canvas"></canvas>
+
         <header>
-            <div class="prompt-line">
-                <span class="user">guest@root</span>:<span class="path">~/writeups</span>$ <span class="command"
-                    id="typewriter">./start_session.sh</span>
-            </div>
+<pre id="vault-header" class="vault-logo">
+██╗   ██╗ █████╗ ██╗   ██╗██╗  ████████╗
+██║   ██║██╔══██╗██║   ██║██║  ╚══██╔══╝
+██║   ██║███████║██║   ██║██║     ██║   
+╚██╗ ██╔╝██╔══██║██║   ██║██║     ██║   
+ ╚████╔╝ ██║  ██║╚██████╔╝███████╗██║   
+  ╚═══╝  ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝
+</pre>
         </header>
 
+        <div id="site-content" style="opacity: 0; transition: opacity 1.5s ease-in;">
         <nav id="navbar">
             <ul>
                 <li><a href="#" data-target="home" class="active">[ Home ]</a></li>
@@ -54,6 +62,7 @@
                     class="cursor">_</span>
             </div>
         </footer>
+        </div>
     </div>
 
     <script src="js/data.js"></script>

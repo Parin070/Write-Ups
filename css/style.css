@@ -327,3 +327,31 @@ code {
     background: rgba(0, 255, 0, 0.1);
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
 }
+
+/* Boot Sequence & Rebrand Styles */
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #0c0c0c;
+    pointer-events: none; /* Let clicks pass through if we listen on document */
+    transition: opacity 1s ease-out;
+}
+
+#matrix-canvas.fade-out {
+    opacity: 0;
+}
+
+.vault-logo {
+    white-space: pre;
+    text-align: center;
+    color: #00ff41;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.8), 0 0 10px rgba(0, 255, 65, 0.5);
+    font-size: clamp(8px, 2vw, 16px);
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+    line-height: 1.2;
+}

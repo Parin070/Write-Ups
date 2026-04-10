@@ -6,25 +6,94 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav a');
     const pathSpan = document.getElementById('current-path');
     
-    // Typewriter effect for initial load
-    const typeWriterEl = document.getElementById('typewriter');
-    const text = typeWriterEl.textContent;
-    typeWriterEl.textContent = '';
-    let i = 0;
+    // VAULT Boot Sequence: Matrix Rain
+    const canvas = document.getElementById('matrix-canvas');
+    const ctx = canvas.getContext('2d');
+    const siteContent = document.getElementById('site-content');
     
-    function typeWriter() {
-        if (i < text.length) {
-            typeWriterEl.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 50);
-        } else {
-            setTimeout(() => {
-                renderHome();
-            }, 500);
-        }
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const katakana = 'ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ';
+    const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const nums = '0123456789';
+    const alphabet = katakana + latin + nums;
+    
+    const fontSize = 16;
+    const columns = Math.ceil(canvas.width / fontSize);
+    const drops = [];
+    for (let x = 0; x < columns; x++) {
+        drops[x] = Math.random() * -100; // Start at random negative offsets for a more natural initial cascade
     }
+
+    let animationFrame;
+    let bootComplete = false;
+
+    function drawMatrix() {
+        // Black bg with opacity for trail effect
+        ctx.fillStyle = 'rgba(12, 12, 12, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = '#00ff41'; // Matrix Green
+        ctx.font = fontSize + 'px "Share Tech Mono", monospace';
+        
+        for (let i = 0; i < drops.length; i++) {
+            const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+            
+            // Randomly reset drops to top
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+            drops[i]++;
+        }
+        animationFrame = requestAnimationFrame(drawMatrix);
+    }
+
+    function endBootSequence() {
+        if (bootComplete) return;
+        bootComplete = true;
+        cancelAnimationFrame(animationFrame);
+        
+        // Add fade out class
+        canvas.classList.add('fade-out');
+        
+        // Reveal main site content
+        siteContent.style.opacity = '1';
+        
+        setTimeout(() => {
+            canvas.style.display = 'none';
+        }, 1000); // Math CSS transition duration
+        
+        renderHome();
+    }
+
+    // Start Matrix Rain
+    drawMatrix();
     
-    typeWriter();
+    // Auto complete after 2.5s
+    const bootTimer = setTimeout(endBootSequence, 2500);
+
+    // Skip mechanism
+    const handleSkip = () => {
+        if (!bootComplete) {
+            clearTimeout(bootTimer);
+            endBootSequence();
+        }
+    };
+    
+    document.addEventListener('keydown', handleSkip, { once: true });
+    document.addEventListener('click', handleSkip, { once: true });
+    
+    // Handle window resize dynamically during canvas display
+    window.addEventListener('resize', () => {
+        if(!bootComplete) {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            ctx.fillStyle = '#0c0c0c';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+    });
 
     // Navigation setup
     navLinks.forEach(link => {
