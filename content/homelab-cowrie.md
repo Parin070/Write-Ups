@@ -8,7 +8,7 @@ Set up Cowrie SSH honeypot on an Ubuntu Server VM to capture and log attacker be
 - **Hypervisor:** VirtualBox
 - **VM:** Ubuntu Server 24 LTS
 - **Network:** NAT (switched to Host-Only post setup)
-
+- **For more information check out:** [https://github.com/Parin070/Cowrie-Honeypot-Lab](https://github.com/Parin070/Cowrie-Honeypot-Lab)
 ---
 
 ## Step 1: Move OpenSSH to a Different Port
@@ -294,7 +294,7 @@ sudo tail -f /var/ossec/logs/archives/archives.json | grep cowrie
 ### Step 8: Create Custom Detection Rules for Cowrie
 
 Custom rules were added via **Server Management → Rules → Add new rules file** on the Wazuh dashboard, named `cowrie_rules.xml`:
-See [`cowrie_rules.xml`](cowrie_rules.xml) for the full rule definitions.
+See [cowrie_rules.xml](https://github.com/Parin070/Cowrie-Honeypot-Lab/blob/main/cowrie_rules.xml) for the full rule definitions.
 
 Restarted the manager from the dashboard prompt to apply rules.
 
