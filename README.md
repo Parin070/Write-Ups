@@ -24,6 +24,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 **Security Blue Team**
 - Introduction To OSINT
 - Introduction To Dark Web Operations
+- Introduction to Network Analysis
 
 **HackTheBox**
 - Brutus (Sherlocks)

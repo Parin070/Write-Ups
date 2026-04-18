@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Brutus",
-        category: "DFIR",
-        platform: "HackTheBox",
-        linkTarget: "htb"
+        name: "Introduction to Network Analysis",
+        category: "Network Analysis",
+        platform: "Security Blue Team",
+        linkTarget: "sbt"
     },
     writeups: {
         htb: {
@@ -57,6 +57,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "Dark Web",
                 markdownFile: "content/sbt-intro-darkweb.md"
+            },
+            {
+                id: "sbt-intro-network",
+                name: "Introduction to Network Analysis",
+                difficulty: "Easy",
+                category: "Network Analysis",
+                markdownFile: "content/sbt-intro-network.md"
             }
         ]
     }
