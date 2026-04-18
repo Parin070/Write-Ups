@@ -10,8 +10,9 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 
 | Platform | Status |
 |---|---|
+| Homelab | Active |
 | Security Blue Team | Active |
-| HackTheBox | Coming Soon |
+| HackTheBox | Active |
 | TryHackMe | Coming Soon |
 | OverTheWire | Coming Soon |
 | PicoCTF | Coming Soon |
@@ -23,6 +24,13 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 **Security Blue Team**
 - Introduction To OSINT
 - Introduction To Dark Web Operations
+
+**HackTheBox**
+- Brutus (Sherlocks)
+
+**Homelab**
+- Cowrie Honeypot - Setup
+- DDoS Simulation - Testing
 
 ---
 
