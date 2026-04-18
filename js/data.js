@@ -5,13 +5,25 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "DDoS Simulation",
-        category: "Network Defense",
-        platform: "Homelab",
-        linkTarget: "homelab"
+        name: "Brutus",
+        category: "DFIR",
+        platform: "HackTheBox",
+        linkTarget: "htb"
     },
     writeups: {
-        htb: [],
+        htb: {
+            challenges: [],
+            machines: [],
+            sherlocks: [
+                {
+                    id: "htb-brutus",
+                    name: "Brutus",
+                    difficulty: "Very Easy",
+                    category: "DFIR",
+                    markdownFile: "content/htb-sherlocks-brutus.md"
+                }
+            ]
+        },
         tryhackme: [],
         overthewire: [],
         picoctf: [],

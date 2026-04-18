@@ -143,13 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
-    function renderCategory(category) {
-        closeWriteup();
-        const writeups = siteData.writeups[category];
-        if (!writeups || writeups.length === 0) {
-            contentDiv.innerHTML = `
-                <h2>[ /${category} ] Directory Listing</h2>
-                <div class="writeup-card" style="border-style: dashed; border-color: var(--alert); background-color: rgba(255, 170, 0, 0.05);">
+    window.drawList = function(list) {
+        if (!list || list.length === 0) {
+            return `
+                <div class="writeup-card" style="border-style: dashed; border-color: var(--alert); background-color: rgba(255, 170, 0, 0.05); margin-bottom: 1.5rem;">
                     <p style="color: var(--alert); text-align: center; margin-top: 1rem; font-weight: bold; font-size: 1.2rem;">
                         [!] STATUS: COMING SOON
                     </p>
@@ -159,10 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     </p>
                 </div>
             `;
-            return;
         }
-        
-        const html = writeups.map(w => `
+        return '<div class="writeup-list" style="margin-bottom: 1.5rem;">' + list.map(w => `
             <div class="writeup-card">
                 <div class="writeup-header" onclick="${w.markdownFile ? `openMarkdown('${w.markdownFile}')` : `alert('No markdown file specified')`}">
                     <span class="writeup-title">${w.name}</span>
@@ -172,14 +167,57 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             </div>
-        `).join('');
+        `).join('') + '</div>';
+    };
+
+    function renderCategory(category) {
+        closeWriteup();
+        const categoryData = siteData.writeups[category];
         
-        contentDiv.innerHTML = `
-            <h2>[ /${category} ] Directory Listing</h2>
-            <div class="writeup-list">
-                ${html}
-            </div>
-        `;
+        // Ensure path matches top-level category on re-render
+        pathSpan.textContent = `~/writeups/${category}`;
+        
+        let headerHtml = `<h2 style="display: block; margin-bottom: 2rem;">[ /${category} ] Directory Listing</h2><br>`;
+        let contentHtml = '';
+
+        if (Array.isArray(categoryData)) {
+            // Flat Layout Structure
+            contentHtml = window.drawList(categoryData);
+        } else if (typeof categoryData === 'object' && categoryData !== null) {
+            // Nested Layout Structure - Render Folder Navigators
+            contentHtml += `<div class="writeup-list">`;
+            for (const sub in categoryData) {
+                const subTitle = sub.charAt(0).toUpperCase() + sub.slice(1);
+                contentHtml += `
+                    <div class="writeup-card" style="cursor: pointer; border-color: #00aaff; background-color: rgba(0, 170, 255, 0.05);" onclick="renderSubCategory('${category}', '${sub}')">
+                        <div class="writeup-header">
+                            <span class="writeup-title" style="color: #00aaff;">[DIR] ${subTitle}</span>
+                            <div class="writeup-badges">
+                                <span class="badge category" style="border-color: #aaaaaa; color: #aaaaaa;">Items: ${categoryData[sub].length}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            contentHtml += `</div>`;
+        } else {
+            contentHtml = window.drawList([]);
+        }
+
+        contentDiv.innerHTML = headerHtml + contentHtml;
+    }
+
+    window.renderSubCategory = function(category, subCategory) {
+        closeWriteup();
+        
+        // Update Terminal Path Footprint accurately
+        pathSpan.textContent = `~/writeups/${category}/${subCategory}`;
+        
+        const subData = siteData.writeups[category][subCategory];
+        
+        let headerHtml = `<h2 style="display: block; margin-bottom: 2rem;">[ /${category}/${subCategory} ] Directory Listing</h2><br>`;
+        
+        contentDiv.innerHTML = headerHtml + window.drawList(subData);
     }
 
     window.openMarkdown = function(mdFile) {
