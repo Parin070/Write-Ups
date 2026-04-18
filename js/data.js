@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Introduction to Network Analysis",
-        category: "Network Analysis",
+        name: "Introduction to Digital Forensics",
+        category: "DFIR",
         platform: "Security Blue Team",
         linkTarget: "sbt"
     },
@@ -64,6 +64,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "Network Analysis",
                 markdownFile: "content/sbt-intro-network.md"
+            },
+            {
+                id: "sbt-intro-forensics",
+                name: "Introduction to Digital Forensics",
+                difficulty: "Easy",
+                category: "DFIR",
+                markdownFile: "content/sbt-intro-forensics.md"
             }
         ]
     }

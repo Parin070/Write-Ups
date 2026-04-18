@@ -25,6 +25,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Introduction To OSINT
 - Introduction To Dark Web Operations
 - Introduction to Network Analysis
+- Introduction to Digital Forensics
 
 **HackTheBox**
 - Brutus (Sherlocks)
