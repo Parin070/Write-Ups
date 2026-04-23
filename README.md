@@ -14,7 +14,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 | Security Blue Team | Active |
 | HackTheBox | Active |
 | TryHackMe | Coming Soon |
-| OverTheWire | Coming Soon |
+| OverTheWire | Active |
 | PicoCTF | Coming Soon |
 
 ---
@@ -29,6 +29,9 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 
 **HackTheBox**
 - Brutus (Sherlocks)
+
+**OverTheWire**
+- Bandit (Levels 0 - 10)
 
 **Homelab**
 - Cowrie Honeypot - Setup

@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Introduction to Digital Forensics",
-        category: "DFIR",
-        platform: "Security Blue Team",
-        linkTarget: "sbt"
+        name: "Bandit",
+        category: "Linux",
+        platform: "OverTheWire",
+        linkTarget: "overthewire"
     },
     writeups: {
         htb: {
@@ -25,7 +25,20 @@ const siteData = {
             ]
         },
         tryhackme: [],
-        overthewire: [],
+        overthewire: {
+            bandit: [
+                { id: "otw-bandit-0-1", name: "Level 0 -> Level 1", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-0-1.md" },
+                { id: "otw-bandit-1-2", name: "Level 1 -> Level 2", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-1-2.md" },
+                { id: "otw-bandit-2-3", name: "Level 2 -> Level 3", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-2-3.md" },
+                { id: "otw-bandit-3-4", name: "Level 3 -> Level 4", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-3-4.md" },
+                { id: "otw-bandit-4-5", name: "Level 4 -> Level 5", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-4-5.md" },
+                { id: "otw-bandit-5-6", name: "Level 5 -> Level 6", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-5-6.md" },
+                { id: "otw-bandit-6-7", name: "Level 6 -> Level 7", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-6-7.md" },
+                { id: "otw-bandit-7-8", name: "Level 7 -> Level 8", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-7-8.md" },
+                { id: "otw-bandit-8-9", name: "Level 8 -> Level 9", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-8-9.md" },
+                { id: "otw-bandit-9-10", name: "Level 9 -> Level 10", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-9-10.md" }
+            ]
+        },
         picoctf: [],
         homelab: [
             {
