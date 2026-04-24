@@ -36,7 +36,12 @@ const siteData = {
                 { id: "otw-bandit-6-7", name: "Level 6 -> Level 7", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-6-7.md" },
                 { id: "otw-bandit-7-8", name: "Level 7 -> Level 8", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-7-8.md" },
                 { id: "otw-bandit-8-9", name: "Level 8 -> Level 9", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-8-9.md" },
-                { id: "otw-bandit-9-10", name: "Level 9 -> Level 10", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-9-10.md" }
+                { id: "otw-bandit-9-10", name: "Level 9 -> Level 10", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-9-10.md" },
+                { id: "otw-bandit-10-11", name: "Level 10 -> Level 11", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-10-11.md" },
+                { id: "otw-bandit-11-12", name: "Level 11 -> Level 12", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-11-12.md" },
+                { id: "otw-bandit-12-13", name: "Level 12 -> Level 13", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-12-13.md" },
+                { id: "otw-bandit-13-14", name: "Level 13 -> Level 14", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-13-14.md" },
+                { id: "otw-bandit-14-15", name: "Level 14 -> Level 15", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-14-15.md" }
             ]
         },
         picoctf: [],

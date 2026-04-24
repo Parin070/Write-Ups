@@ -31,7 +31,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Brutus (Sherlocks)
 
 **OverTheWire**
-- Bandit (Levels 0 - 10)
+- Bandit (Levels 0 - 15)
 
 **Homelab**
 - Cowrie Honeypot - Setup
