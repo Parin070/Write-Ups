@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Bandit",
-        category: "Linux",
-        platform: "OverTheWire",
-        linkTarget: "overthewire"
+        name: "Introduction to Vulnerability Management",
+        category: "Vulnerability Management",
+        platform: "Security Blue Team",
+        linkTarget: "sbt"
     },
     writeups: {
         htb: {
@@ -89,6 +89,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "DFIR",
                 markdownFile: "content/sbt-intro-forensics.md"
+            },
+            {
+                id: "sbt-intro-vuln",
+                name: "Introduction to Vulnerability Management",
+                difficulty: "Easy",
+                category: "Vulnerability Management",
+                markdownFile: "content/sbt-intro-vuln.md"
             }
         ]
     }

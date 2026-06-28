@@ -26,6 +26,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Introduction To Dark Web Operations
 - Introduction to Network Analysis
 - Introduction to Digital Forensics
+- Introduction to Vulnerability Management
 
 **HackTheBox**
 - Brutus (Sherlocks)
