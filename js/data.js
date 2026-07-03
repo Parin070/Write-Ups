@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Introduction to Vulnerability Management",
-        category: "Vulnerability Management",
+        name: "Introduction to Threat Hunting",
+        category: "Threat Hunting",
         platform: "Security Blue Team",
         linkTarget: "sbt"
     },
@@ -96,6 +96,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "Vulnerability Management",
                 markdownFile: "content/sbt-intro-vuln.md"
+            },
+            {
+                id: "sbt-intro-threat-hunting",
+                name: "Introduction to Threat Hunting",
+                difficulty: "Easy",
+                category: "Threat Hunting",
+                markdownFile: "content/sbt-intro-threat-hunting.md"
             }
         ]
     }
