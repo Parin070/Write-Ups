@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Warmed Up",
+        name: "2WARM",
         category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -79,6 +79,13 @@ const siteData = {
                 difficulty: "Very Easy",
                 category: "General Skills",
                 markdownFile: "content/pico-warmed-up.md"
+            },
+            {
+                id: "pico-2warm",
+                name: "2WARM",
+                difficulty: "Very Easy",
+                category: "General Skills",
+                markdownFile: "content/pico-2warm.md"
             }
         ],
         homelab: [
