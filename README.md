@@ -15,7 +15,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 | HackTheBox | Active |
 | TryHackMe | Coming Soon |
 | OverTheWire | Active |
-| PicoCTF | Coming Soon |
+| CyLab/picoCTF | Active |
 
 ---
 
@@ -34,6 +34,9 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 
 **OverTheWire**
 - Bandit (Levels 0 - 15)
+
+**CyLab/picoCTF**
+- Obedient Cat
 
 **Homelab**
 - Cowrie Honeypot - Setup
