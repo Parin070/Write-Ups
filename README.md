@@ -40,6 +40,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Super SSH
 - What's a Net Cat?
 - Mod 26
+- Warmed Up
 
 **Homelab**
 - Cowrie Honeypot - Setup
