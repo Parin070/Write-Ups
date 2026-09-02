@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Obedient Cat",
+        name: "Super SSH",
         category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -51,6 +51,13 @@ const siteData = {
                 difficulty: "Very Easy",
                 category: "General Skills",
                 markdownFile: "content/pico-obedient-cat.md"
+            },
+            {
+                id: "pico-super-ssh",
+                name: "Super SSH",
+                difficulty: "Very Easy",
+                category: "General Skills",
+                markdownFile: "content/pico-super-ssh.md"
             }
         ],
         homelab: [
