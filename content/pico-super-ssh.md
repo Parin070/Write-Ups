@@ -20,9 +20,9 @@ ssh ctf-player@titan.picoctf.net -p 57095
 Accept host key, enter password. Flag prints in welcome banner on successful login.
 
 ## Flag
-
+```
 picoCTF{s3cur3_c0nn3ct10n_8306c99d}
-
+```
 
 ## Takeaway
 

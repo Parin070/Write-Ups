@@ -39,6 +39,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Obedient Cat
 - Super SSH
 - What's a Net Cat?
+- Mod 26
 
 **Homelab**
 - Cowrie Honeypot - Setup
