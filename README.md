@@ -42,6 +42,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Mod 26
 - Warmed Up
 - 2WARM
+- Bases
 
 **Homelab**
 - Cowrie Honeypot - Setup
