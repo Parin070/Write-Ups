@@ -44,7 +44,15 @@ const siteData = {
                 { id: "otw-bandit-14-15", name: "Level 14 -> Level 15", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-14-15.md" }
             ]
         },
-        picoctf: [],
+        picoctf: [
+            {
+                id: "pico-obedient-cat",
+                name: "Obedient Cat",
+                difficulty: "Easy",
+                category: "General Skills",
+                markdownFile: "content/pico-obedient-cat.md"
+            }
+        ],
         homelab: [
             {
                 id: "homelab-cowrie",
