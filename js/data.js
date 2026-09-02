@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Introduction to Threat Hunting",
-        category: "Threat Hunting",
-        platform: "Security Blue Team",
-        linkTarget: "sbt"
+        name: "Obedient Cat",
+        category: "General Skills",
+        platform: "CyLab/picoCTF",
+        linkTarget: "picoctf"
     },
     writeups: {
         htb: {
@@ -48,7 +48,7 @@ const siteData = {
             {
                 id: "pico-obedient-cat",
                 name: "Obedient Cat",
-                difficulty: "Easy",
+                difficulty: "Very Easy",
                 category: "General Skills",
                 markdownFile: "content/pico-obedient-cat.md"
             }
