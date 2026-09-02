@@ -38,6 +38,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 **CyLab/picoCTF**
 - Obedient Cat
 - Super SSH
+- What's a Net Cat?
 
 **Homelab**
 - Cowrie Honeypot - Setup

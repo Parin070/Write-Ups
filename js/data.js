@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Super SSH",
+        name: "What's a Net Cat?",
         category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -58,6 +58,13 @@ const siteData = {
                 difficulty: "Very Easy",
                 category: "General Skills",
                 markdownFile: "content/pico-super-ssh.md"
+            },
+            {
+                id: "pico-whats-a-net-cat",
+                name: "What's a Net Cat?",
+                difficulty: "Very Easy",
+                category: "General Skills",
+                markdownFile: "content/pico-whats-a-net-cat.md"
             }
         ],
         homelab: [
