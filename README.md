@@ -16,7 +16,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 | TryHackMe | Coming Soon |
 | OverTheWire | Active |
 | CyLab/picoCTF | Active |
-| PortSwigger | Coming Soon |
+| PortSwigger | Active |
 
 ---
 
@@ -44,6 +44,9 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Warmed Up
 - 2WARM
 - Bases
+
+**PortSwigger**
+- SQL Injection in WHERE Clause â€” Retrieve Hidden Data
 
 **Homelab**
 - Cowrie Honeypot - Setup
