@@ -154,6 +154,7 @@ const siteData = {
                 category: "Threat Hunting",
                 markdownFile: "content/sbt-intro-threat-hunting.md"
             }
-        ]
+        ],
+        portswigger: []
     }
 };
