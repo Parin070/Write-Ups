@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Bases",
-        category: "General Skills",
-        platform: "CyLab/picoCTF",
-        linkTarget: "picoctf"
+        name: "SQL Injection in WHERE Clause — Retrieve Hidden Data",
+        category: "SQL Injection",
+        platform: "PortSwigger Web Security Academy",
+        linkTarget: "portswigger"
     },
     writeups: {
         htb: {
@@ -155,6 +155,14 @@ const siteData = {
                 markdownFile: "content/sbt-intro-threat-hunting.md"
             }
         ],
-        portswigger: []
+        portswigger: [
+            {
+                id: "portswigger-sqli-where-clause",
+                name: "SQL Injection in WHERE Clause — Retrieve Hidden Data",
+                difficulty: "Apprentice",
+                category: "SQL Injection",
+                markdownFile: "content/portswigger-sqli-where-clause.md"
+            }
+        ]
     }
 };
