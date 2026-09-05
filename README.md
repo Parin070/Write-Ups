@@ -16,6 +16,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 | TryHackMe | Coming Soon |
 | OverTheWire | Active |
 | CyLab/picoCTF | Active |
+| PortSwigger | Coming Soon |
 
 ---
 
