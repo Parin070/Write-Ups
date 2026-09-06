@@ -48,6 +48,7 @@ A personal writeup site documenting my progress across cybersecurity platforms �
 **PortSwigger**
 - SQL Injection in WHERE Clause — Retrieve Hidden Data
 - SQL Injection — Login Bypass
+- SQL Injection UNION Attack — Determining Column Count
 
 **Homelab**
 - Cowrie Honeypot - Setup
