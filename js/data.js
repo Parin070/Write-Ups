@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SQL Injection in WHERE Clause — Retrieve Hidden Data",
+        name: "SQL Injection — Login Bypass",
         category: "SQL Injection",
         platform: "PortSwigger Web Security Academy",
         linkTarget: "portswigger"
@@ -162,6 +162,13 @@ const siteData = {
                 difficulty: "Apprentice",
                 category: "SQL Injection",
                 markdownFile: "content/portswigger-sqli-where-clause.md"
+            },
+            {
+                id: "portswigger-sqli-login-bypass",
+                name: "SQL Injection — Login Bypass",
+                difficulty: "Apprentice",
+                category: "SQL Injection",
+                markdownFile: "content/portswigger-sqli-login-bypass.md"
             }
         ]
     }
