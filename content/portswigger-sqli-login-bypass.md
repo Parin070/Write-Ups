@@ -6,40 +6,44 @@
 **Difficulty:** Apprentice
 
 ## Goal
-Log in as `administrator` via SQLi.
+Bypass the authentication mechanism to log in as the `administrator` user using SQL injection.
 
-## Vulnerability
-Login query built with string concat. No sanitization.
+## Vulnerability Analysis
+The application constructs its database queries by directly concatenating user-supplied input from the login form without proper sanitization or parameterization.
 
-Likely query:
+The underlying backend query is likely structured as:
 ```sql
 SELECT * FROM users WHERE username = 'INPUT' AND password = 'INPUT'
 ```
 
-## Steps
-1. Open lab.
+## Exploitation Steps
+
+1. **Access the Lab:** Open the lab target page in your browser.
 
 ![Lab open](content/assets/portswigger_sqli_login_bypass/01-lab-open.png)
 
-2. Navigate to login page, enter username `administrator'--` and any password (e.g. `x`).
+2. **Inject the Payload:** Navigate to the login page and enter `administrator'--` into the **Username** field. Set the **Password** field to any arbitrary value (e.g., `x`).
 
 ![Payload entered](content/assets/portswigger_sqli_login_bypass/03-payload-entered.png)
 
-3. Submit the login form.
+3. **Submit:** Click the **Log in** button to send the request.
 
-## Why it works
-Payload closes quote, comments out password check.
+## Technical Explanation
+The injected single quote (`'`) breaks out of the `username` string literal, while the double-dash sequence (`--`) tells SQL to treat the remainder of the query line as a comment.
 
-Query becomes:
+This modifies the executing SQL query into:
 ```sql
 SELECT * FROM users WHERE username = 'administrator'--' AND password = 'x'
 ```
-`--` comments rest. Password check skipped. Logs in as administrator.
+
+Because everything following `--` is ignored by the database parser, the password validation check is completely bypassed. The query evaluates to return the `administrator` user record regardless of the password supplied.
 
 ## Result
-Access administrator account. Lab solved.
+The application authenticates the session as the `administrator` user, successfully solving the lab.
 
 ![Lab solved](content/assets/portswigger_sqli_login_bypass/04-lab-solved.png)
 
-## Fix
-Use parameterized queries. Never concat user input into SQL.
+## Remediation & Fix
+To prevent login bypass via SQL injection:
+- Use **parameterized queries** (prepared statements) for all database operations.
+- Never concatenate raw user input directly into SQL statements.
