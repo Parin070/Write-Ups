@@ -47,6 +47,7 @@ A personal writeup site documenting my progress across cybersecurity platforms �
 
 **PortSwigger**
 - SQL Injection in WHERE Clause — Retrieve Hidden Data
+- SQL Injection — Login Bypass
 
 **Homelab**
 - Cowrie Honeypot - Setup
