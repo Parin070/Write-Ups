@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SQL Injection — Login Bypass",
+        name: "SQL Injection UNION Attack — Determining Column Count",
         category: "SQL Injection",
         platform: "PortSwigger Web Security Academy",
         linkTarget: "portswigger"
@@ -169,6 +169,13 @@ const siteData = {
                 difficulty: "Apprentice",
                 category: "SQL Injection",
                 markdownFile: "content/portswigger-sqli-login-bypass.md"
+            },
+            {
+                id: "portswigger-sqli-union-column-count",
+                name: "SQL Injection UNION Attack — Determining Column Count",
+                difficulty: "Apprentice",
+                category: "SQL Injection",
+                markdownFile: "content/portswigger-sqli-union-column-count.md"
             }
         ]
     }
