@@ -47,6 +47,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Wave a Flag
 - Tab, Tab, Attack
 - Insp3ct0r
+- Strings It
 
 **PortSwigger**
 - SQL Injection in WHERE Clause â€” Retrieve Hidden Data
