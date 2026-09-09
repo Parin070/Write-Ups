@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Insp3ct0r",
-        category: "Web Exploitation",
+        name: "Strings It",
+        category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
     },
@@ -114,6 +114,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "Web Exploitation",
                 markdownFile: "content/pico-insp3ct0r.md"
+            },
+            {
+                id: "pico-strings-it",
+                name: "Strings It",
+                difficulty: "Easy",
+                category: "General Skills",
+                markdownFile: "content/pico-strings-it.md"
             }
         ],
         homelab: [
