@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Wave a Flag",
+        name: "Tab, Tab, Attack",
         category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -100,6 +100,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "General Skills",
                 markdownFile: "content/pico-wave-a-flag.md"
+            },
+            {
+                id: "pico-tab-tab-attack",
+                name: "Tab, Tab, Attack",
+                difficulty: "Easy",
+                category: "General Skills",
+                markdownFile: "content/pico-tab-tab-attack.md"
             }
         ],
         homelab: [
