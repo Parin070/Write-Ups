@@ -44,6 +44,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Warmed Up
 - 2WARM
 - Bases
+- Wave a Flag
 
 **PortSwigger**
 - SQL Injection in WHERE Clause â€” Retrieve Hidden Data
