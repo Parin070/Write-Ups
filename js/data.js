@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Tab, Tab, Attack",
-        category: "General Skills",
+        name: "Insp3ct0r",
+        category: "Web Exploitation",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
     },
@@ -107,6 +107,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "General Skills",
                 markdownFile: "content/pico-tab-tab-attack.md"
+            },
+            {
+                id: "pico-insp3ct0r",
+                name: "Insp3ct0r",
+                difficulty: "Easy",
+                category: "Web Exploitation",
+                markdownFile: "content/pico-insp3ct0r.md"
             }
         ],
         homelab: [
