@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SQL Injection UNION Attack — Determining Column Count",
-        category: "SQL Injection",
-        platform: "PortSwigger Web Security Academy",
-        linkTarget: "portswigger"
+        name: "Wave a Flag",
+        category: "General Skills",
+        platform: "CyLab/picoCTF",
+        linkTarget: "picoctf"
     },
     writeups: {
         htb: {
@@ -93,6 +93,13 @@ const siteData = {
                 difficulty: "Very Easy",
                 category: "General Skills",
                 markdownFile: "content/pico-bases.md"
+            },
+            {
+                id: "pico-wave-a-flag",
+                name: "Wave a Flag",
+                difficulty: "Easy",
+                category: "General Skills",
+                markdownFile: "content/pico-wave-a-flag.md"
             }
         ],
         homelab: [
