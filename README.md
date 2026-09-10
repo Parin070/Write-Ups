@@ -49,6 +49,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Insp3ct0r
 - Strings It
 - First Grep
+- Where are the robots?
 
 **PortSwigger**
 - SQL Injection in WHERE Clause â€” Retrieve Hidden Data
