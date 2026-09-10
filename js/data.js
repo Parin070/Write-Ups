@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Strings It",
+        name: "First Grep",
         category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -121,6 +121,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "General Skills",
                 markdownFile: "content/pico-strings-it.md"
+            },
+            {
+                id: "pico-first-grep",
+                name: "First Grep",
+                difficulty: "Easy",
+                category: "General Skills",
+                markdownFile: "content/pico-first-grep.md"
             }
         ],
         homelab: [
