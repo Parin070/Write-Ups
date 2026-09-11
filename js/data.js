@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Python Wrangling",
-        category: "General Skills",
-        platform: "CyLab/picoCTF",
-        linkTarget: "picoctf"
+        name: "SQL Injection UNION Attack — Finding a Column Containing Text",
+        category: "SQL Injection",
+        platform: "PortSwigger",
+        linkTarget: "portswigger"
     },
     writeups: {
         htb: {
@@ -225,6 +225,13 @@ const siteData = {
                 difficulty: "Apprentice",
                 category: "SQL Injection",
                 markdownFile: "content/portswigger-sqli-union-column-count.md"
+            },
+            {
+                id: "portswigger-sqli-union-column-text",
+                name: "SQL Injection UNION Attack — Finding a Column Containing Text",
+                difficulty: "Practitioner",
+                category: "SQL Injection",
+                markdownFile: "content/portswigger-sqli-union-column-text.md"
             }
         ]
     }
