@@ -50,6 +50,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Strings It
 - First Grep
 - Where are the robots?
+- Python Wrangling
 
 **PortSwigger**
 - SQL Injection in WHERE Clause â€” Retrieve Hidden Data
