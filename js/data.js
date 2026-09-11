@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Where are the robots?",
-        category: "Web Exploitation",
+        name: "Python Wrangling",
+        category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
     },
@@ -135,6 +135,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "Web Exploitation",
                 markdownFile: "content/pico-where-are-the-robots.md"
+            },
+            {
+                id: "pico-python-wrangling",
+                name: "Python Wrangling",
+                difficulty: "Medium",
+                category: "General Skills",
+                markdownFile: "content/pico-python-wrangling.md"
             }
         ],
         homelab: [
