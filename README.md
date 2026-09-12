@@ -57,6 +57,7 @@ A personal writeup site documenting my progress across cybersecurity platforms �
 - SQL Injection — Login Bypass
 - SQL Injection UNION Attack — Determining Column Count
 - SQL Injection UNION Attack — Finding a Column Containing Text
+- SQL Injection UNION Attack — Retrieving Data from Other Tables
 
 **Homelab**
 - Cowrie Honeypot - Setup
