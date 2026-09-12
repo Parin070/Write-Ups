@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SQL Injection UNION Attack — Finding a Column Containing Text",
+        name: "SQL Injection UNION Attack — Retrieving Data from Other Tables",
         category: "SQL Injection",
         platform: "PortSwigger",
         linkTarget: "portswigger"
@@ -232,6 +232,13 @@ const siteData = {
                 difficulty: "Practitioner",
                 category: "SQL Injection",
                 markdownFile: "content/portswigger-sqli-union-column-text.md"
+            },
+            {
+                id: "portswigger-sqli-union-retrieving-data",
+                name: "SQL Injection UNION Attack — Retrieving Data from Other Tables",
+                difficulty: "Practitioner",
+                category: "SQL Injection",
+                markdownFile: "content/portswigger-sqli-union-retrieving-data.md"
             }
         ]
     }
