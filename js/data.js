@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SQL Injection UNION Attack — Retrieving Data from Other Tables",
+        name: "SQL Injection Attack — Querying Database Type and Version on Oracle",
         category: "SQL Injection",
         platform: "PortSwigger",
         linkTarget: "portswigger"
@@ -239,6 +239,13 @@ const siteData = {
                 difficulty: "Practitioner",
                 category: "SQL Injection",
                 markdownFile: "content/portswigger-sqli-union-retrieving-data.md"
+            },
+            {
+                id: "portswigger-sqli-oracle-version",
+                name: "SQL Injection Attack — Querying Database Type and Version on Oracle",
+                difficulty: "Practitioner",
+                category: "SQL Injection",
+                markdownFile: "content/portswigger-sqli-oracle-version.md"
             }
         ]
     }
