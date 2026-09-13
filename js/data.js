@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SQL Injection Attack — Listing Database Contents on Oracle",
+        name: "SQL Injection UNION Attack — Retrieving Multiple Values in a Single Column",
         category: "SQL Injection",
         platform: "PortSwigger",
         linkTarget: "portswigger"
@@ -267,6 +267,13 @@ const siteData = {
                 difficulty: "Practitioner",
                 category: "SQL Injection",
                 markdownFile: "content/portswigger-sqli-oracle-contents.md"
+            },
+            {
+                id: "portswigger-sqli-union-single-column",
+                name: "SQL Injection UNION Attack — Retrieving Multiple Values in a Single Column",
+                difficulty: "Practitioner",
+                category: "SQL Injection",
+                markdownFile: "content/portswigger-sqli-union-single-column.md"
             }
         ]
     }
