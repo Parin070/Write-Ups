@@ -60,6 +60,7 @@ A personal writeup site documenting my progress across cybersecurity platforms �
 - SQL Injection UNION Attack — Retrieving Data from Other Tables
 - SQL Injection Attack — Querying Database Type and Version on Oracle
 - SQL Injection Attack — Querying Database Type and Version on MySQL and Microsoft
+- SQL Injection Attack — Listing Database Contents on Non-Oracle Databases
 
 **Homelab**
 - Cowrie Honeypot - Setup
