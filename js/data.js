@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SQL Injection Attack — Querying Database Type and Version on MySQL and Microsoft",
+        name: "SQL Injection Attack — Listing Database Contents on Non-Oracle Databases",
         category: "SQL Injection",
         platform: "PortSwigger",
         linkTarget: "portswigger"
@@ -253,6 +253,13 @@ const siteData = {
                 difficulty: "Practitioner",
                 category: "SQL Injection",
                 markdownFile: "content/portswigger-sqli-mysql-mssql-version.md"
+            },
+            {
+                id: "portswigger-sqli-non-oracle-contents",
+                name: "SQL Injection Attack — Listing Database Contents on Non-Oracle Databases",
+                difficulty: "Practitioner",
+                category: "SQL Injection",
+                markdownFile: "content/portswigger-sqli-non-oracle-contents.md"
             }
         ]
     }
