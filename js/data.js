@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SQL Injection Attack — Listing Database Contents on Non-Oracle Databases",
+        name: "SQL Injection Attack — Listing Database Contents on Oracle",
         category: "SQL Injection",
         platform: "PortSwigger",
         linkTarget: "portswigger"
@@ -260,6 +260,13 @@ const siteData = {
                 difficulty: "Practitioner",
                 category: "SQL Injection",
                 markdownFile: "content/portswigger-sqli-non-oracle-contents.md"
+            },
+            {
+                id: "portswigger-sqli-oracle-contents",
+                name: "SQL Injection Attack — Listing Database Contents on Oracle",
+                difficulty: "Practitioner",
+                category: "SQL Injection",
+                markdownFile: "content/portswigger-sqli-oracle-contents.md"
             }
         ]
     }
