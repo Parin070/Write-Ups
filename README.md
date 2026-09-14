@@ -51,6 +51,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - First Grep
 - Where are the robots?
 - Python Wrangling
+- PW Crack 1
 
 **PortSwigger**
 - SQL Injection in WHERE Clause â€” Retrieve Hidden Data
