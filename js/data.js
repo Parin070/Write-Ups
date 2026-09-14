@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SQL Injection UNION Attack — Retrieving Multiple Values in a Single Column",
-        category: "SQL Injection",
-        platform: "PortSwigger",
-        linkTarget: "portswigger"
+        name: "PW Crack 1",
+        category: "Reverse Engineering",
+        platform: "CyLab/picoCTF",
+        linkTarget: "picoctf"
     },
     writeups: {
         htb: {
@@ -142,6 +142,13 @@ const siteData = {
                 difficulty: "Medium",
                 category: "General Skills",
                 markdownFile: "content/pico-python-wrangling.md"
+            },
+            {
+                id: "pico-pw-crack-1",
+                name: "PW Crack 1",
+                difficulty: "Easy",
+                category: "Reverse Engineering",
+                markdownFile: "content/pico-pw-crack-1.md"
             }
         ],
         homelab: [
