@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "PW Crack 3",
+        name: "PW Crack 4",
         category: "Reverse Engineering",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -163,6 +163,13 @@ const siteData = {
                 difficulty: "Medium",
                 category: "Reverse Engineering",
                 markdownFile: "content/pico-pw-crack-3.md"
+            },
+            {
+                id: "pico-pw-crack-4",
+                name: "PW Crack 4",
+                difficulty: "Medium",
+                category: "Reverse Engineering",
+                markdownFile: "content/pico-pw-crack-4.md"
             }
         ],
         homelab: [
