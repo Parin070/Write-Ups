@@ -56,6 +56,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - PW Crack 3
 - PW Crack 4
 - PW Crack 5
+- Enhance!
 
 **PortSwigger**
 - SQL Injection in WHERE Clause â€” Retrieve Hidden Data
