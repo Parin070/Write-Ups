@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "vault-door-training",
+        name: "keygenme-py",
         category: "Reverse Engineering",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -198,6 +198,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "Reverse Engineering",
                 markdownFile: "content/pico-vault-door-training.md"
+            },
+            {
+                id: "pico-keygenme-py",
+                name: "keygenme-py",
+                difficulty: "Medium",
+                category: "Reverse Engineering",
+                markdownFile: "content/pico-keygenme-py.md"
             }
         ],
         homelab: [
