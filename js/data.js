@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Big Zip",
-        category: "General Skills",
+        name: "vault-door-training",
+        category: "Reverse Engineering",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
     },
@@ -191,6 +191,13 @@ const siteData = {
                 difficulty: "Easy",
                 category: "General Skills",
                 markdownFile: "content/pico-big-zip.md"
+            },
+            {
+                id: "pico-vault-door-training",
+                name: "vault-door-training",
+                difficulty: "Easy",
+                category: "Reverse Engineering",
+                markdownFile: "content/pico-vault-door-training.md"
             }
         ],
         homelab: [
