@@ -57,6 +57,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - PW Crack 4
 - PW Crack 5
 - Enhance!
+- Big Zip
 
 **PortSwigger**
 - SQL Injection in WHERE Clause â€” Retrieve Hidden Data
