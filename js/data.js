@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "keygenme-py",
-        category: "Reverse Engineering",
+        name: "buffer overflow 0",
+        category: "Binary Exploitation",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
     },
@@ -205,6 +205,13 @@ const siteData = {
                 difficulty: "Medium",
                 category: "Reverse Engineering",
                 markdownFile: "content/pico-keygenme-py.md"
+            },
+            {
+                id: "pico-buffer-overflow-0",
+                name: "buffer overflow 0",
+                difficulty: "Easy",
+                category: "Binary Exploitation",
+                markdownFile: "content/pico-buffer-overflow-0.md"
             }
         ],
         homelab: [
