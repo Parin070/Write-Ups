@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Enhance!",
-        category: "Forensics",
+        name: "Big Zip",
+        category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
     },
@@ -184,6 +184,13 @@ const siteData = {
                 difficulty: "Medium",
                 category: "Forensics",
                 markdownFile: "content/pico-enhance.md"
+            },
+            {
+                id: "pico-big-zip",
+                name: "Big Zip",
+                difficulty: "Easy",
+                category: "General Skills",
+                markdownFile: "content/pico-big-zip.md"
             }
         ],
         homelab: [
