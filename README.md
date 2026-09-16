@@ -37,30 +37,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Bandit (Levels 0 - 15)
 
 **CyLab/picoCTF**
-- Obedient Cat
-- Super SSH
-- What's a Net Cat?
-- Mod 26
-- Warmed Up
-- 2WARM
-- Bases
-- Wave a Flag
-- Tab, Tab, Attack
-- Insp3ct0r
-- Strings It
-- First Grep
-- Where are the robots?
-- Python Wrangling
-- PW Crack 1
-- PW Crack 2
-- PW Crack 3
-- PW Crack 4
-- PW Crack 5
-- Enhance!
-- Big Zip
-- vault-door-training
-- keygenme-py
-- buffer overflow 0
+- General Skills (24 challenges)
 
 **PortSwigger**
 - SQL Injection in WHERE Clause â€” Retrieve Hidden Data
