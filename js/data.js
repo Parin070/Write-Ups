@@ -44,176 +44,178 @@ const siteData = {
                 { id: "otw-bandit-14-15", name: "Level 14 -> Level 15", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-14-15.md" }
             ]
         },
-        picoctf: [
-            {
-                id: "pico-obedient-cat",
-                name: "Obedient Cat",
-                difficulty: "Very Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-obedient-cat.md"
-            },
-            {
-                id: "pico-super-ssh",
-                name: "Super SSH",
-                difficulty: "Very Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-super-ssh.md"
-            },
-            {
-                id: "pico-whats-a-net-cat",
-                name: "What's a Net Cat?",
-                difficulty: "Very Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-whats-a-net-cat.md"
-            },
-            {
-                id: "pico-mod-26",
-                name: "Mod 26",
-                difficulty: "Very Easy",
-                category: "Cryptography",
-                markdownFile: "content/pico-mod-26.md"
-            },
-            {
-                id: "pico-warmed-up",
-                name: "Warmed Up",
-                difficulty: "Very Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-warmed-up.md"
-            },
-            {
-                id: "pico-2warm",
-                name: "2WARM",
-                difficulty: "Very Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-2warm.md"
-            },
-            {
-                id: "pico-bases",
-                name: "Bases",
-                difficulty: "Very Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-bases.md"
-            },
-            {
-                id: "pico-wave-a-flag",
-                name: "Wave a Flag",
-                difficulty: "Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-wave-a-flag.md"
-            },
-            {
-                id: "pico-tab-tab-attack",
-                name: "Tab, Tab, Attack",
-                difficulty: "Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-tab-tab-attack.md"
-            },
-            {
-                id: "pico-insp3ct0r",
-                name: "Insp3ct0r",
-                difficulty: "Easy",
-                category: "Web Exploitation",
-                markdownFile: "content/pico-insp3ct0r.md"
-            },
-            {
-                id: "pico-strings-it",
-                name: "Strings It",
-                difficulty: "Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-strings-it.md"
-            },
-            {
-                id: "pico-first-grep",
-                name: "First Grep",
-                difficulty: "Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-first-grep.md"
-            },
-            {
-                id: "pico-where-are-the-robots",
-                name: "Where are the robots?",
-                difficulty: "Easy",
-                category: "Web Exploitation",
-                markdownFile: "content/pico-where-are-the-robots.md"
-            },
-            {
-                id: "pico-python-wrangling",
-                name: "Python Wrangling",
-                difficulty: "Medium",
-                category: "General Skills",
-                markdownFile: "content/pico-python-wrangling.md"
-            },
-            {
-                id: "pico-pw-crack-1",
-                name: "PW Crack 1",
-                difficulty: "Easy",
-                category: "Reverse Engineering",
-                markdownFile: "content/pico-pw-crack-1.md"
-            },
-            {
-                id: "pico-pw-crack-2",
-                name: "PW Crack 2",
-                difficulty: "Easy",
-                category: "Reverse Engineering",
-                markdownFile: "content/pico-pw-crack-2.md"
-            },
-            {
-                id: "pico-pw-crack-3",
-                name: "PW Crack 3",
-                difficulty: "Medium",
-                category: "Reverse Engineering",
-                markdownFile: "content/pico-pw-crack-3.md"
-            },
-            {
-                id: "pico-pw-crack-4",
-                name: "PW Crack 4",
-                difficulty: "Medium",
-                category: "Reverse Engineering",
-                markdownFile: "content/pico-pw-crack-4.md"
-            },
-            {
-                id: "pico-pw-crack-5",
-                name: "PW Crack 5",
-                difficulty: "Medium",
-                category: "Reverse Engineering",
-                markdownFile: "content/pico-pw-crack-5.md"
-            },
-            {
-                id: "pico-enhance",
-                name: "Enhance!",
-                difficulty: "Medium",
-                category: "Forensics",
-                markdownFile: "content/pico-enhance.md"
-            },
-            {
-                id: "pico-big-zip",
-                name: "Big Zip",
-                difficulty: "Easy",
-                category: "General Skills",
-                markdownFile: "content/pico-big-zip.md"
-            },
-            {
-                id: "pico-vault-door-training",
-                name: "vault-door-training",
-                difficulty: "Easy",
-                category: "Reverse Engineering",
-                markdownFile: "content/pico-vault-door-training.md"
-            },
-            {
-                id: "pico-keygenme-py",
-                name: "keygenme-py",
-                difficulty: "Medium",
-                category: "Reverse Engineering",
-                markdownFile: "content/pico-keygenme-py.md"
-            },
-            {
-                id: "pico-buffer-overflow-0",
-                name: "buffer overflow 0",
-                difficulty: "Easy",
-                category: "Binary Exploitation",
-                markdownFile: "content/pico-buffer-overflow-0.md"
-            }
-        ],
+        picoctf: {
+            "General Skills": [
+                {
+                    id: "pico-obedient-cat",
+                    name: "Obedient Cat",
+                    difficulty: "Very Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-obedient-cat.md"
+                },
+                {
+                    id: "pico-super-ssh",
+                    name: "Super SSH",
+                    difficulty: "Very Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-super-ssh.md"
+                },
+                {
+                    id: "pico-whats-a-net-cat",
+                    name: "What's a Net Cat?",
+                    difficulty: "Very Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-whats-a-net-cat.md"
+                },
+                {
+                    id: "pico-mod-26",
+                    name: "Mod 26",
+                    difficulty: "Very Easy",
+                    category: "Cryptography",
+                    markdownFile: "content/pico-mod-26.md"
+                },
+                {
+                    id: "pico-warmed-up",
+                    name: "Warmed Up",
+                    difficulty: "Very Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-warmed-up.md"
+                },
+                {
+                    id: "pico-2warm",
+                    name: "2WARM",
+                    difficulty: "Very Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-2warm.md"
+                },
+                {
+                    id: "pico-bases",
+                    name: "Bases",
+                    difficulty: "Very Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-bases.md"
+                },
+                {
+                    id: "pico-wave-a-flag",
+                    name: "Wave a Flag",
+                    difficulty: "Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-wave-a-flag.md"
+                },
+                {
+                    id: "pico-tab-tab-attack",
+                    name: "Tab, Tab, Attack",
+                    difficulty: "Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-tab-tab-attack.md"
+                },
+                {
+                    id: "pico-insp3ct0r",
+                    name: "Insp3ct0r",
+                    difficulty: "Easy",
+                    category: "Web Exploitation",
+                    markdownFile: "content/pico-insp3ct0r.md"
+                },
+                {
+                    id: "pico-strings-it",
+                    name: "Strings It",
+                    difficulty: "Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-strings-it.md"
+                },
+                {
+                    id: "pico-first-grep",
+                    name: "First Grep",
+                    difficulty: "Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-first-grep.md"
+                },
+                {
+                    id: "pico-where-are-the-robots",
+                    name: "Where are the robots?",
+                    difficulty: "Easy",
+                    category: "Web Exploitation",
+                    markdownFile: "content/pico-where-are-the-robots.md"
+                },
+                {
+                    id: "pico-python-wrangling",
+                    name: "Python Wrangling",
+                    difficulty: "Medium",
+                    category: "General Skills",
+                    markdownFile: "content/pico-python-wrangling.md"
+                },
+                {
+                    id: "pico-pw-crack-1",
+                    name: "PW Crack 1",
+                    difficulty: "Easy",
+                    category: "Reverse Engineering",
+                    markdownFile: "content/pico-pw-crack-1.md"
+                },
+                {
+                    id: "pico-pw-crack-2",
+                    name: "PW Crack 2",
+                    difficulty: "Easy",
+                    category: "Reverse Engineering",
+                    markdownFile: "content/pico-pw-crack-2.md"
+                },
+                {
+                    id: "pico-pw-crack-3",
+                    name: "PW Crack 3",
+                    difficulty: "Medium",
+                    category: "Reverse Engineering",
+                    markdownFile: "content/pico-pw-crack-3.md"
+                },
+                {
+                    id: "pico-pw-crack-4",
+                    name: "PW Crack 4",
+                    difficulty: "Medium",
+                    category: "Reverse Engineering",
+                    markdownFile: "content/pico-pw-crack-4.md"
+                },
+                {
+                    id: "pico-pw-crack-5",
+                    name: "PW Crack 5",
+                    difficulty: "Medium",
+                    category: "Reverse Engineering",
+                    markdownFile: "content/pico-pw-crack-5.md"
+                },
+                {
+                    id: "pico-enhance",
+                    name: "Enhance!",
+                    difficulty: "Medium",
+                    category: "Forensics",
+                    markdownFile: "content/pico-enhance.md"
+                },
+                {
+                    id: "pico-big-zip",
+                    name: "Big Zip",
+                    difficulty: "Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-big-zip.md"
+                },
+                {
+                    id: "pico-vault-door-training",
+                    name: "vault-door-training",
+                    difficulty: "Easy",
+                    category: "Reverse Engineering",
+                    markdownFile: "content/pico-vault-door-training.md"
+                },
+                {
+                    id: "pico-keygenme-py",
+                    name: "keygenme-py",
+                    difficulty: "Medium",
+                    category: "Reverse Engineering",
+                    markdownFile: "content/pico-keygenme-py.md"
+                },
+                {
+                    id: "pico-buffer-overflow-0",
+                    name: "buffer overflow 0",
+                    difficulty: "Easy",
+                    category: "Binary Exploitation",
+                    markdownFile: "content/pico-buffer-overflow-0.md"
+                }
+            ]
+        },
         homelab: [
             {
                 id: "homelab-cowrie",
