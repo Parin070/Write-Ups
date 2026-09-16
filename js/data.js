@@ -276,77 +276,79 @@ const siteData = {
                 markdownFile: "content/sbt-intro-threat-hunting.md"
             }
         ],
-        portswigger: [
-            {
-                id: "portswigger-sqli-where-clause",
-                name: "SQL Injection in WHERE Clause — Retrieve Hidden Data",
-                difficulty: "Apprentice",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-where-clause.md"
-            },
-            {
-                id: "portswigger-sqli-login-bypass",
-                name: "SQL Injection — Login Bypass",
-                difficulty: "Apprentice",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-login-bypass.md"
-            },
-            {
-                id: "portswigger-sqli-union-column-count",
-                name: "SQL Injection UNION Attack — Determining Column Count",
-                difficulty: "Apprentice",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-union-column-count.md"
-            },
-            {
-                id: "portswigger-sqli-union-column-text",
-                name: "SQL Injection UNION Attack — Finding a Column Containing Text",
-                difficulty: "Practitioner",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-union-column-text.md"
-            },
-            {
-                id: "portswigger-sqli-union-retrieving-data",
-                name: "SQL Injection UNION Attack — Retrieving Data from Other Tables",
-                difficulty: "Practitioner",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-union-retrieving-data.md"
-            },
-            {
-                id: "portswigger-sqli-oracle-version",
-                name: "SQL Injection Attack — Querying Database Type and Version on Oracle",
-                difficulty: "Practitioner",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-oracle-version.md"
-            },
-            {
-                id: "portswigger-sqli-mysql-mssql-version",
-                name: "SQL Injection Attack — Querying Database Type and Version on MySQL and Microsoft",
-                difficulty: "Practitioner",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-mysql-mssql-version.md"
-            },
-            {
-                id: "portswigger-sqli-non-oracle-contents",
-                name: "SQL Injection Attack — Listing Database Contents on Non-Oracle Databases",
-                difficulty: "Practitioner",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-non-oracle-contents.md"
-            },
-            {
-                id: "portswigger-sqli-oracle-contents",
-                name: "SQL Injection Attack — Listing Database Contents on Oracle",
-                difficulty: "Practitioner",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-oracle-contents.md"
-            },
-            {
-                id: "portswigger-sqli-union-single-column",
-                name: "SQL Injection UNION Attack — Retrieving Multiple Values in a Single Column",
-                difficulty: "Practitioner",
-                category: "SQL Injection",
-                markdownFile: "content/portswigger-sqli-union-single-column.md"
-            }
-        ]
+        portswigger: {
+            "SQL Injection": [
+                {
+                    id: "portswigger-sqli-where-clause",
+                    name: "SQL Injection in WHERE Clause — Retrieve Hidden Data",
+                    difficulty: "Apprentice",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-where-clause.md"
+                },
+                {
+                    id: "portswigger-sqli-login-bypass",
+                    name: "SQL Injection — Login Bypass",
+                    difficulty: "Apprentice",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-login-bypass.md"
+                },
+                {
+                    id: "portswigger-sqli-union-column-count",
+                    name: "SQL Injection UNION Attack — Determining Column Count",
+                    difficulty: "Apprentice",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-union-column-count.md"
+                },
+                {
+                    id: "portswigger-sqli-union-column-text",
+                    name: "SQL Injection UNION Attack — Finding a Column Containing Text",
+                    difficulty: "Practitioner",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-union-column-text.md"
+                },
+                {
+                    id: "portswigger-sqli-union-retrieving-data",
+                    name: "SQL Injection UNION Attack — Retrieving Data from Other Tables",
+                    difficulty: "Practitioner",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-union-retrieving-data.md"
+                },
+                {
+                    id: "portswigger-sqli-oracle-version",
+                    name: "SQL Injection Attack — Querying Database Type and Version on Oracle",
+                    difficulty: "Practitioner",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-oracle-version.md"
+                },
+                {
+                    id: "portswigger-sqli-mysql-mssql-version",
+                    name: "SQL Injection Attack — Querying Database Type and Version on MySQL and Microsoft",
+                    difficulty: "Practitioner",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-mysql-mssql-version.md"
+                },
+                {
+                    id: "portswigger-sqli-non-oracle-contents",
+                    name: "SQL Injection Attack — Listing Database Contents on Non-Oracle Databases",
+                    difficulty: "Practitioner",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-non-oracle-contents.md"
+                },
+                {
+                    id: "portswigger-sqli-oracle-contents",
+                    name: "SQL Injection Attack — Listing Database Contents on Oracle",
+                    difficulty: "Practitioner",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-oracle-contents.md"
+                },
+                {
+                    id: "portswigger-sqli-union-single-column",
+                    name: "SQL Injection UNION Attack — Retrieving Multiple Values in a Single Column",
+                    difficulty: "Practitioner",
+                    category: "SQL Injection",
+                    markdownFile: "content/portswigger-sqli-union-single-column.md"
+                }
+            ]
+        }
     }
 };
