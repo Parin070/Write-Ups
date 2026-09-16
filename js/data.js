@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "plumbing",
+        name: "Magikarp Ground Mission",
         category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -241,6 +241,13 @@ const siteData = {
                     difficulty: "Medium",
                     category: "General Skills",
                     markdownFile: "content/pico-plumbing.md"
+                },
+                {
+                    id: "pico-magikarp-ground-mission",
+                    name: "Magikarp Ground Mission",
+                    difficulty: "Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-magikarp-ground-mission.md"
                 }
             ]
         },
