@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "convertme.py",
+        name: "plumbing",
         category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -234,6 +234,13 @@ const siteData = {
                     difficulty: "Easy",
                     category: "General Skills",
                     markdownFile: "content/pico-convertme-py.md"
+                },
+                {
+                    id: "pico-plumbing",
+                    name: "plumbing",
+                    difficulty: "Medium",
+                    category: "General Skills",
+                    markdownFile: "content/pico-plumbing.md"
                 }
             ]
         },
