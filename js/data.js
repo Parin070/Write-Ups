@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "buffer overflow 0",
-        category: "Binary Exploitation",
+        name: "First Find",
+        category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
     },
@@ -213,6 +213,13 @@ const siteData = {
                     difficulty: "Easy",
                     category: "Binary Exploitation",
                     markdownFile: "content/pico-buffer-overflow-0.md"
+                },
+                {
+                    id: "pico-first-find",
+                    name: "First Find",
+                    difficulty: "Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-first-find.md"
                 }
             ]
         },
