@@ -40,16 +40,7 @@ A personal writeup site documenting my progress across cybersecurity platforms �
 - General Skills (24 challenges)
 
 **PortSwigger**
-- SQL Injection in WHERE Clause — Retrieve Hidden Data
-- SQL Injection — Login Bypass
-- SQL Injection UNION Attack — Determining Column Count
-- SQL Injection UNION Attack — Finding a Column Containing Text
-- SQL Injection UNION Attack — Retrieving Data from Other Tables
-- SQL Injection Attack — Querying Database Type and Version on Oracle
-- SQL Injection Attack — Querying Database Type and Version on MySQL and Microsoft
-- SQL Injection Attack — Listing Database Contents on Non-Oracle Databases
-- SQL Injection Attack — Listing Database Contents on Oracle
-- SQL Injection UNION Attack — Retrieving Multiple Values in a Single Column
+- SQL Injection (10 labs)
 
 **Homelab**
 - Cowrie Honeypot - Setup
