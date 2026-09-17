@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Magikarp Ground Mission",
+        name: "Nice netcat...",
         category: "General Skills",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -248,6 +248,13 @@ const siteData = {
                     difficulty: "Easy",
                     category: "General Skills",
                     markdownFile: "content/pico-magikarp-ground-mission.md"
+                },
+                {
+                    id: "pico-nice-netcat",
+                    name: "Nice netcat...",
+                    difficulty: "Easy",
+                    category: "General Skills",
+                    markdownFile: "content/pico-nice-netcat.md"
                 }
             ]
         },
