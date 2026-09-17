@@ -37,7 +37,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Bandit (Levels 0 - 15)
 
 **CyLab/picoCTF**
-- General Skills (29 challenges)
+- General Skills (30 challenges)
 
 **PortSwigger**
 - SQL Injection (10 labs)
