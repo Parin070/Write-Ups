@@ -5,7 +5,7 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "caesar",
+        name: "interencdec",
         category: "Cryptography",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
@@ -271,6 +271,13 @@ const siteData = {
                     difficulty: "Medium",
                     category: "Cryptography",
                     markdownFile: "content/pico-caesar.md"
+                },
+                {
+                    id: "pico-interencdec",
+                    name: "interencdec",
+                    difficulty: "Easy",
+                    category: "Cryptography",
+                    markdownFile: "content/pico-interencdec.md"
                 }
             ]
         },
