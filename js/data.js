@@ -5,8 +5,8 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "Static ain't always noise",
-        category: "General Skills",
+        name: "caesar",
+        category: "Cryptography",
         platform: "CyLab/picoCTF",
         linkTarget: "picoctf"
     },
@@ -262,6 +262,15 @@ const siteData = {
                     difficulty: "Easy",
                     category: "General Skills",
                     markdownFile: "content/pico-static-aint-always-noise.md"
+                }
+            ],
+            "Cryptography": [
+                {
+                    id: "pico-caesar",
+                    name: "caesar",
+                    difficulty: "Medium",
+                    category: "Cryptography",
+                    markdownFile: "content/pico-caesar.md"
                 }
             ]
         },
