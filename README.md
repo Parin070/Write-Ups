@@ -38,7 +38,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 
 **CyLab/picoCTF**
 - General Skills (31 challenges)
-- Cryptography (1 challenge)
+- Cryptography (2 challenges)
 
 **PortSwigger**
 - SQL Injection (10 labs)
