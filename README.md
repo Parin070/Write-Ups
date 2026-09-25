@@ -31,7 +31,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Introduction to Threat Hunting
 
 **TryHackMe**
-- Rooms
+- SOC L1 Alert Triage (Rooms)
 
 **HackTheBox**
 - Brutus (Sherlocks)
