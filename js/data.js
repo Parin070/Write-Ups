@@ -24,7 +24,9 @@ const siteData = {
                 }
             ]
         },
-        tryhackme: [],
+        tryhackme: {
+            rooms: []
+        },
         overthewire: {
             bandit: [
                 { id: "otw-bandit-0-1", name: "Level 0 -> Level 1", difficulty: "Very Easy", category: "Linux", markdownFile: "content/otw-bandit-0-1.md" },
