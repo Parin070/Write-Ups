@@ -14,7 +14,7 @@ A simulated SOC dashboard containing 5 alerts. The room walks through reading al
 
 Opened the [SOC dashboard](https://static-labs.tryhackme.cloud/apps/socl1-alerttriage/) and counted the alerts listed, then checked which was most recent.
 
-![SIEM Dashboard Overview](assets/thm_socl1_alert_triage/dashboard_overview.png)
+![SIEM Dashboard Overview](content/assets/thm_socl1_alert_triage/dashboard_overview.png)
 
 - **Q:** Number of alerts on the dashboard?  
   **A:** `5`
@@ -65,14 +65,14 @@ Three alerts triaged in priority order — details reviewed first, then a verdic
 - **Source Network:** `UK04/MEETINGROOM`
 - **Sent:** 5.8 GB | **Received:** 5.2 GB
 
-![Potential Data Exfiltration Alert Details](assets/thm_socl1_alert_triage/exfiltration_details.png)
+![Potential Data Exfiltration Alert Details](content/assets/thm_socl1_alert_triage/exfiltration_details.png)
 
 `*.zoom.us` is a legitimate video conferencing domain, and 5–6 GB of bidirectional traffic is normal for a long video call. No indicator of exfiltration to an untrusted destination.
 
 - **Verdict:** False Positive — Severity downgraded to Low
 - **Comment:** Data over 5GB was transferred from UK04/MEETING to *.zoom.us, a legitimate video conferencing service. Large data transfers are expected during long meetings.
 
-![Potential Data Exfiltration Alert Triage](assets/thm_socl1_alert_triage/exfiltration_triage.png)
+![Potential Data Exfiltration Alert Triage](content/assets/thm_socl1_alert_triage/exfiltration_triage.png)
 
 **Flag:**
 ```
@@ -90,14 +90,14 @@ THM{looks_like_lots_of_zoom_meetings}
 - **Source URL:** `https://freecatvideoshd.monster/cats2025.mp4.exe`
 - **MD5:** `14d8486f3f63875ef93cfd240c5dc10b`
 
-![Double-Extension File Creation Alert Details](assets/thm_socl1_alert_triage/double_extension_details.png)
+![Double-Extension File Creation Alert Details](content/assets/thm_socl1_alert_triage/double_extension_details.png)
 
 The file's real extension is `.exe`, masked behind a fake `.mp4` name, downloaded via Chrome from a suspicious, unofficial-looking domain. Classic double-extension phishing pattern used to trick a user into running a malicious executable.
 
 - **Verdict:** True Positive — Severity kept at High
 - **Comment:** The original link was disguised as "freecatvideos," but the downloaded file has the extension *.mp4.exe — an executable posing as a video — and the running process is chrome.exe.
 
-![Double-Extension File Creation Alert Triage](assets/thm_socl1_alert_triage/double_extension_triage.png)
+![Double-Extension File Creation Alert Triage](content/assets/thm_socl1_alert_triage/double_extension_triage.png)
 
 **Flag:**
 ```
@@ -113,14 +113,14 @@ THM{how_could_this_user_fall_for_it?}
 - **Source Host:** `LPT-IT-063`
 - **Source Network:** `VPN/DEVELOPERS`
 
-![Download from GitHub Repository Alert Details](assets/thm_socl1_alert_triage/github_download_details.png)
+![Download from GitHub Repository Alert Details](content/assets/thm_socl1_alert_triage/github_download_details.png)
 
 The URL resolves to Facebook's official react repository — a well-known, legitimate open-source JavaScript framework — accessed by a developer over the VPN developer network. No sign of malicious tooling.
 
 - **Verdict:** False Positive — Severity kept at Low
 - **Comment:** On analyzing the accessed URL, the user accessed the React repository, which is a legitimate JavaScript framework, and the GitHub account is legit.
 
-![Download from GitHub Repository Alert Triage](assets/thm_socl1_alert_triage/github_download_triage.png)
+![Download from GitHub Repository Alert Triage](content/assets/thm_socl1_alert_triage/github_download_triage.png)
 
 **Flag:**
 ```
