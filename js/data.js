@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "interencdec",
-        category: "Cryptography",
-        platform: "CyLab/picoCTF",
-        linkTarget: "picoctf"
+        name: "SOC L1 Alert Triage",
+        category: "SOC / Blue Team",
+        platform: "TryHackMe",
+        linkTarget: "tryhackme"
     },
     writeups: {
         htb: {
@@ -25,7 +25,15 @@ const siteData = {
             ]
         },
         tryhackme: {
-            rooms: []
+            rooms: [
+                {
+                    id: "thm-socl1-alert-triage",
+                    name: "SOC L1 Alert Triage",
+                    difficulty: "Easy",
+                    category: "SOC / Blue Team",
+                    markdownFile: "content/thm-socl1-alert-triage.md"
+                }
+            ]
         },
         overthewire: {
             bandit: [
