@@ -13,7 +13,7 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 | Homelab | Active |
 | Security Blue Team | Active |
 | HackTheBox | Active |
-| TryHackMe | Coming Soon |
+| TryHackMe | Active |
 | OverTheWire | Active |
 | CyLab/picoCTF | Active |
 | PortSwigger | Active |
@@ -29,6 +29,9 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 - Introduction to Digital Forensics
 - Introduction to Vulnerability Management
 - Introduction to Threat Hunting
+
+**TryHackMe**
+- Rooms
 
 **HackTheBox**
 - Brutus (Sherlocks)
