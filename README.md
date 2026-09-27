@@ -6,49 +6,36 @@ A personal writeup site documenting my progress across cybersecurity platforms â
 
 ---
 
-## Platforms Covered
+## Platforms & Overview
 
-| Platform | Status |
-|---|---|
-| Homelab | Active |
-| Security Blue Team | Active |
-| HackTheBox | Active |
-| TryHackMe | Active |
-| OverTheWire | Active |
-| CyLab/picoCTF | Active |
-| PortSwigger | Active |
+### Security Blue Team
+Hands-on courses and modules focused on practical SOC operations, defensive security, and incident response.
+- **Modules:** 6 writeups (OSINT, Dark Web, Network Analysis, Digital Forensics, Vulnerability Management, Threat Hunting)
 
----
+### TryHackMe
+Interactive cyber security learning platform with hands-on labs and guided investigation rooms.
+- **Rooms:** 1 room writeup
 
-## Current Writeups
+### HackTheBox
+Penetration testing and defensive security platform featuring vulnerable machines, CTF challenges, and DFIR Sherlocks.
+- **Sherlocks:** 1 Sherlock writeup
 
-**Security Blue Team**
-- Introduction To OSINT
-- Introduction To Dark Web Operations
-- Introduction to Network Analysis
-- Introduction to Digital Forensics
-- Introduction to Vulnerability Management
-- Introduction to Threat Hunting
+### OverTheWire
+Linux-focused wargames for mastering shell commands, file manipulation, and security fundamentals.
+- **Bandit:** 15 level writeups (Levels 0 â€“ 15)
 
-**TryHackMe**
-- SOC L1 Alert Triage (Rooms)
+### CyLab/picoCTF
+Capture The Flag platform by Carnegie Mellon University's CyLab for building practical CTF problem-solving skills.
+- **General Skills:** 31 challenges
+- **Cryptography:** 2 challenges
 
-**HackTheBox**
-- Brutus (Sherlocks)
+### PortSwigger Web Security Academy
+In-depth web security labs covering real-world web application vulnerabilities and exploitation techniques.
+- **SQL Injection:** 10 labs
 
-**OverTheWire**
-- Bandit (Levels 0 - 15)
-
-**CyLab/picoCTF**
-- General Skills (31 challenges)
-- Cryptography (2 challenges)
-
-**PortSwigger**
-- SQL Injection (10 labs)
-
-**Homelab**
-- Cowrie Honeypot - Setup
-- DDoS Simulation - Testing
+### Homelab
+Self-hosted laboratory setup for deploying honeypots, simulating attacks, and analyzing defense telemetry.
+- **Labs:** 2 lab writeups (Cowrie Honeypot, DDoS Simulation)
 
 ---
 
