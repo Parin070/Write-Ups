@@ -28,6 +28,7 @@ Linux-focused wargames for mastering shell commands, file manipulation, and secu
 Capture The Flag platform by Carnegie Mellon University's CyLab for building practical CTF problem-solving skills.
 - **General Skills:** 31 challenges
 - **Cryptography:** 2 challenges
+- **AI Foundations:** 1 challenge
 
 ### PortSwigger Web Security Academy
 In-depth web security labs covering real-world web application vulnerabilities and exploitation techniques.
