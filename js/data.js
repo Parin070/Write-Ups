@@ -5,10 +5,10 @@ const siteData = {
         skills: ["Log Analysis", "Homelab", "Network Analysis", "Cryptography", "SIEM", "Incident Response"]
     },
     latestWriteup: {
-        name: "SOC L1 Alert Triage",
-        category: "SOC / Blue Team",
-        platform: "TryHackMe",
-        linkTarget: "tryhackme"
+        name: "Neuron Meet 0 — Academy",
+        category: "AI Foundations",
+        platform: "CyLab/picoCTF",
+        linkTarget: "picoctf"
     },
     writeups: {
         htb: {
@@ -288,6 +288,15 @@ const siteData = {
                     difficulty: "Easy",
                     category: "Cryptography",
                     markdownFile: "content/pico-interencdec.md"
+                }
+            ],
+            "AI Foundations": [
+                {
+                    id: "pico-neuron-meet-0",
+                    name: "Neuron Meet 0 — Academy",
+                    difficulty: "Easy",
+                    category: "AI Foundations",
+                    markdownFile: "content/pico-neuron-meet-0.md"
                 }
             ]
         },
